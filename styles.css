@@ -1,1 +1,41 @@
+/* Estilos personalizados */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.article-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.article-summary {
+    font-size: 1rem;
+    color: #555;
+}
+.featured-article {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.category {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #888;
+}
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+}
+/* Centrar el logo */
+.navbar .logo-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+/* Centrar la barra de navegación */
+.navbar .navbar-nav {
+    justify-content: center;
+    width: 100%;
+}
 
