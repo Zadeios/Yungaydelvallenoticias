@@ -3,39 +3,66 @@
     font-size: 1.5rem;
     font-weight: bold;
 }
+
 .article-title {
-    font-size: 1.3rem;
+    font-size: 1.5rem; /* Aumentar tamaño para mayor impacto */
     font-weight: bold;
 }
+
 .article-summary {
     font-size: 1rem;
     color: #555;
 }
+
 .featured-article {
     background-color: #f8f9fa;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un efecto más moderno */
 }
+
 .category {
     text-transform: uppercase;
     font-size: 0.9rem;
     color: #888;
+    margin-bottom: 10px; /* Separación entre categoría y título */
 }
+
 .footer {
     background-color: #343a40;
     color: #fff;
     padding: 20px;
+    text-align: center; /* Centrar el texto del footer */
 }
+
 /* Centrar el logo */
 .navbar .logo-container {
     display: flex;
     justify-content: center;
     width: 100%;
 }
+
 /* Centrar la barra de navegación */
 .navbar .navbar-nav {
     justify-content: center;
     width: 100%;
 }
+
+/* Ajustar el estilo de las tarjetas de noticias */
+.card {
+    margin-bottom: 20px; /* Espacio entre tarjetas */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.card-img-top {
+    border-radius: 5px 5px 0 0; /* Bordes redondeados solo en la parte superior */
+}
+
+/* Estilo para la noticia que ocupa el espacio de seis */
+.card.mb-4 {
+    margin-bottom: 40px; /* Más espacio debajo */
+}
+
 
