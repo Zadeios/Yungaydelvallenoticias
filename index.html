@@ -35,6 +35,17 @@
             color: #fff;
             padding: 20px;
         }
+        /* Centrar el logo */
+        .navbar .logo-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        /* Centrar la barra de navegación */
+        .navbar .navbar-nav {
+            justify-content: center;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -42,7 +53,17 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Diario</a>
+            <div class="logo-container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.jpg" alt="Logo" width="473" height="353">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -132,7 +153,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p>© 2024 Diario. Todos los derechos reservados.</p>
+                    <p>© 2024 Yungay del Valle Noticias. Todos los derechos reservados.</p>
                 </div>
                 <div class="col-md-6 text-end">
                     <a href="#" class="text-light">Política de Privacidad</a> |
