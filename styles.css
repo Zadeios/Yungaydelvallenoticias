@@ -7,14 +7,15 @@ body {
 }
 
 header {
-    background: #35424a;
+    background: #c62828; /* Color rojo */
     color: #ffffff;
-    padding: 10px 0;
+    padding: 15px 0;
     text-align: center;
 }
 
-header h1 {
+.logo h1 {
     margin: 0;
+    font-size: 2em;
 }
 
 nav ul {
@@ -30,14 +31,15 @@ nav ul li {
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
+    font-weight: bold;
 }
 
-main {
+.destacados, section {
     padding: 20px;
 }
 
 h2 {
-    border-bottom: 2px solid #35424a;
+    border-bottom: 2px solid #c62828; /* Línea roja */
     padding-bottom: 10px;
 }
 
@@ -54,12 +56,11 @@ article h3 {
 }
 
 footer {
-    background: #35424a;
+    background: #c62828; /* Color rojo */
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
     position: relative;
-    
     bottom: 0;
     width: 100%;
 }
