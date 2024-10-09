@@ -3,49 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Tercera News Layout</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Noticias - Diario</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <style>
+        /* Estilos personalizados */
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .article-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        .article-summary {
+            font-size: 1rem;
+            color: #555;
+        }
+        .featured-article {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .category {
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            color: #888;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <h1>La Tercera</h1>
-        </header>
-        <main class="content">
-            <div class="main-article">
-                <img src="main-article.jpg" alt="Main Article">
-                <h2>Contraofensiva oficialista para salvar a juez Muñoz pone en aprietos a Cariola</h2>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Diario</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Opinión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Deportes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cultura</a>
+                    </li>
+                </ul>
             </div>
-            <section class="articles">
-                <div class="article">
-                    <h3>De negar contactos recientes a reconocer una reunión</h3>
-                    <p>Declaraciones de Valencia por vínculos con Hermosilla.</p>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Artículo destacado -->
+            <div class="col-md-8">
+                <div class="featured-article">
+                    <div class="category">Destacado</div>
+                    <h2 class="article-title">Titular de la noticia destacada</h2>
+                    <p class="article-summary">Resumen corto de la noticia destacada, con información relevante y atractiva para captar la atención del lector.</p>
                 </div>
-                <div class="article">
-                    <h3>Las impactantes revelaciones de los hermanos Menéndez</h3>
-                    <p>En nuevo documental de Netflix.</p>
+            </div>
+
+            <!-- Noticias Secundarias -->
+            <div class="col-md-4">
+                <div class="category">Últimas noticias</div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">Noticia secundaria 1</a>
+                    <a href="#" class="list-group-item list-group-item-action">Noticia secundaria 2</a>
+                    <a href="#" class="list-group-item list-group-item-action">Noticia secundaria 3</a>
+                    <a href="#" class="list-group-item list-group-item-action">Noticia secundaria 4</a>
                 </div>
-                <div class="article">
-                    <h3>John Morales, el meteorólogo veterano</h3>
-                    <p>Se quebró en televisión al ver el huracán Milton.</p>
+            </div>
+        </div>
+
+        <!-- Más noticias -->
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Noticia 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Noticia 1</h5>
+                        <p class="card-text">Breve descripción de la noticia para mostrar un resumen atractivo.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
                 </div>
-            </section>
-            <section class="bottom-section">
-                <div class="bottom-article">
-                    <h3>¿Quiénes son los 19 jueces que definirán la expulsión de Ángela Vivanco?</h3>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Noticia 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Noticia 2</h5>
+                        <p class="card-text">Breve descripción de la noticia para mostrar un resumen atractivo.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
                 </div>
-                <div class="bottom-article">
-                    <h3>Geoffrey Hinton, ganador del Nobel de Física</h3>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Noticia 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Noticia 3</h5>
+                        <p class="card-text">Breve descripción de la noticia para mostrar un resumen atractivo.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
                 </div>
-                <div class="bottom-article">
-                    <h3>Mira en vivo la llegada a Florida del huracán Milton</h3>
-                </div>
-            </section>
-        </main>
-        <aside class="sidebar">
-            <h3>Exclusivo Suscriptor</h3>
-            <p>Accede con tu cuenta</p>
-        </aside>
+            </div>
+        </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>© 2024 Diario. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="#" class="text-light">Política de Privacidad</a> |
+                    <a href="#" class="text-light">Términos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
