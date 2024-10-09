@@ -3,69 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radio Biobío Chile - Noticias</title>
+    <title>La Tercera News Layout</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>Radio Biobío</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#nacionales">Nacionales</a></li>
-                <li><a href="#internacionales">Internacionales</a></li>
-                <li><a href="#opinión">Opinión</a></li>
-                <li><a href="#deportes">Deportes</a></li>
-                <li><a href="#cultura">Cultura</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="home" class="destacados">
-            <h2>Noticias Destacadas</h2>
-            <article>
-                <h3>Título de la Noticia Destacada 1</h3>
-                <p>Resumen de la noticia destacada 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-                <a href="#">Leer más...</a>
-            </article>
-            <article>
-                <h3>Título de la Noticia Destacada 2</h3>
-                <p>Resumen de la noticia destacada 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-                <a href="#">Leer más...</a>
-            </article>
-        </section>
-
-        <section id="nacionales">
-            <h2>Noticias Nacionales</h2>
-            <article>
-                <h3>Título de la Noticia Nacional 1</h3>
-                <p>Resumen de la noticia nacional 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#">Leer más...</a>
-            </article>
-            <article>
-                <h3>Título de la Noticia Nacional 2</h3>
-                <p>Resumen de la noticia nacional 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#">Leer más...</a>
-            </article>
-        </section>
-
-        <section id="internacionales">
-            <h2>Noticias Internacionales</h2>
-            <article>
-                <h3>Título de la Noticia Internacional</h3>
-                <p>Resumen de la noticia internacional. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#">Leer más...</a>
-            </article>
-        </section>
-
-        <footer>
-            <p>&copy; 2024 Radio Biobío. Todos los derechos reservados.</p>
-            <p><a href="#contacto">Contacto</a></p>
-        </footer>
-    </main>
+    <div class="container">
+        <header class="header">
+            <h1>La Tercera</h1>
+        </header>
+        <main class="content">
+            <div class="main-article">
+                <img src="main-article.jpg" alt="Main Article">
+                <h2>Contraofensiva oficialista para salvar a juez Muñoz pone en aprietos a Cariola</h2>
+            </div>
+            <section class="articles">
+                <div class="article">
+                    <h3>De negar contactos recientes a reconocer una reunión</h3>
+                    <p>Declaraciones de Valencia por vínculos con Hermosilla.</p>
+                </div>
+                <div class="article">
+                    <h3>Las impactantes revelaciones de los hermanos Menéndez</h3>
+                    <p>En nuevo documental de Netflix.</p>
+                </div>
+                <div class="article">
+                    <h3>John Morales, el meteorólogo veterano</h3>
+                    <p>Se quebró en televisión al ver el huracán Milton.</p>
+                </div>
+            </section>
+            <section class="bottom-section">
+                <div class="bottom-article">
+                    <h3>¿Quiénes son los 19 jueces que definirán la expulsión de Ángela Vivanco?</h3>
+                </div>
+                <div class="bottom-article">
+                    <h3>Geoffrey Hinton, ganador del Nobel de Física</h3>
+                </div>
+                <div class="bottom-article">
+                    <h3>Mira en vivo la llegada a Florida del huracán Milton</h3>
+                </div>
+            </section>
+        </main>
+        <aside class="sidebar">
+            <h3>Exclusivo Suscriptor</h3>
+            <p>Accede con tu cuenta</p>
+        </aside>
+    </div>
 </body>
 </html>
